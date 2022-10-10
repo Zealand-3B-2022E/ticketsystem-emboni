@@ -10,18 +10,25 @@ namespace TicketSystemClassLibrary.Tests {
     [TestClass()]
     public class MCTests {
         [TestMethod()]
-        public void MCTest() {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
         public void PriceTest() {
-            Assert.Fail();
+            //Arrange
+            double expectedValue = 125;
+            //Act
+            MC mc1 = new MC("ABCDEFGH", DateTime.Now);
+            double actualValue = mc1.Price();
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue);
         }
 
         [TestMethod()]
         public void VehicleTypeTest() {
-            Assert.Fail();
+            //Arrange
+            string expectedValue = "MC";
+            //Act
+            MC mc2 = new MC("A1B2C3D4E5", DateTime.Now);
+            string actualValue = mc2.VehicleType();
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue);
         }
     }
 }
