@@ -9,16 +9,18 @@ namespace TicketSystemClassLibrary {
 
         private string _licenseplate;
         private DateTime _date;
-        //public string _car;
 
-        public string Licenseplate { get; set; }
-        public DateTime Date { get; set; }
+        //public string Licenseplate { get; set; }
+        //public DateTime Date { get; set; }
+        public string LicensePlate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime Date { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         //public string ar { get; set; }
 
 
         public Car(string licenseplate, DateTime date)
         {
-            Licenseplate = licenseplate;
+            LicensePlate = licenseplate;
             Date = date;
             //Car = car;
         }
