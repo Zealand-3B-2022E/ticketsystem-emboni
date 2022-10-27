@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TicketSystemClassLibrary {
-    public class Ticket : Vehicle
-    {
-        private string ticket { get; set; };
+
+    //Det ser ikke ud som om du bruger denne klasse
+    //så jeg synes den skal slettes
+
+    //public class Ticket : Vehicle
+    //{
+    //    private string ticket { get; set; };
 
         
-    }
+    //}
 }
